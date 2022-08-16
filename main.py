@@ -1,15 +1,13 @@
 import datetime
 import os
 import time
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['S3_COISA'], os.environ['S3_SECRET'])
-print(s3)
+
 
 
 
 from telegramBot import TelegramBot
 
-bot = TelegramBot()
+bot = TelegramBot('5709111053:AAGnHL5ZJei7kAJEA89oM1Y_EyfpuKByfqs')
 HORA_MIN = 8
 HORA_MAX = 20
 print("BOT TELEGRAM ALIVE")
