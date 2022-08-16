@@ -3,7 +3,7 @@ import time
 
 from telegramBot import TelegramBot
 
-bot = TelegramBot("5709111053:AAGnHL5ZJei7kAJEA89oM1Y_EyfpuKByfqs")
+bot = TelegramBot()
 HORA_MIN = 8
 HORA_MAX = 20
 print("BOT TELEGRAM ALIVE")

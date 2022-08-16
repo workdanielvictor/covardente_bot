@@ -1,7 +1,5 @@
 import requests
-import time
 import json
-#5709111053:AAGnHL5ZJei7kAJEA89oM1Y_EyfpuKByfqs
 class TelegramBot():
     def __init__(self,token):
         self.token = token
