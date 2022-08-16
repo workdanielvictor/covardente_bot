@@ -6,6 +6,7 @@ s3 = S3Connection(os.environ['S3_COISA'], os.environ['S3_SECRET'])
 print(s3)
 
 
+
 from telegramBot import TelegramBot
 
 bot = TelegramBot()
