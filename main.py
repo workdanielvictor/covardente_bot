@@ -14,6 +14,8 @@ HORA_MIN = 11
 HORA_MAX = 23
 print("BOT TELEGRAM ALIVE")
 sys.stdout.flush()
+bot.getMessages()
+bot.sendMessage("covador tá on")
 while(True):
     time.sleep(30)
     bot.getMessages()

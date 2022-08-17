@@ -6,9 +6,9 @@ class TelegramBot():
         self.url_base = f'https://api.telegram.org/bot{token}'
         self.last_update_id = 0
         self.chat_id_list = []
-    def sendMessage(self):
+    def sendMessage(self,text):
         for i in self.chat_id_list:
-            req = f'{self.url_base}/sendMessage?chat_id={i}&text=Cova o dente ai parça'
+            req = f'{self.url_base}/sendMessage?chat_id={i}&text={text}'
             res = requests.get(req)
             resq = json.loads(res.content)
     def getMessages(self):
@@ -21,5 +21,5 @@ class TelegramBot():
 
             chatid = int(i['message']['from']['id'])
             if chatid not in self.chat_id_list:
-                self.sendMessage()
+                self.sendMessage('Cova o dente ai parça')
                 self.chat_id_list.append(chatid)
