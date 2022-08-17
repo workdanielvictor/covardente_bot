@@ -7,8 +7,6 @@ import sys
 
 from telegramBot import TelegramBot
 senha = os.environ['KEY_KAKAROTO']
-print(senha)
-sys.stdout.flush()
 bot = TelegramBot(senha)
 HORA_MIN = 11
 HORA_MAX = 23
@@ -23,5 +21,5 @@ while(True):
     if(hora > HORA_MIN and hora << HORA_MAX):
         print(hora)
         sys.stdout.flush()
-        bot.sendMessage()
+        bot.sendMessage('Lemba de Cova o dente ai parça')
         time.sleep((60*60)*2)
