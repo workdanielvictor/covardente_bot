@@ -1,14 +1,17 @@
 import datetime
+import os
 import time
 import sys
 
 
 
 from telegramBot import TelegramBot
-
-bot = TelegramBot('5709111053:AAGnHL5ZJei7kAJEA89oM1Y_EyfpuKByfqs')
-HORA_MIN = 8
-HORA_MAX = 20
+senha = os.environ['KEY_KAKAROTO']
+print(senha)
+sys.stdout.flush()
+bot = TelegramBot(senha)
+HORA_MIN = 11
+HORA_MAX = 23
 print("BOT TELEGRAM ALIVE")
 sys.stdout.flush()
 while(True):
